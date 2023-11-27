@@ -9,8 +9,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    touch-action: none;
 }
-
+html, body { overflow: hidden}
 body {
     scrollbar-color: black;
     display: flex;
@@ -19,13 +20,14 @@ body {
 }
 
 .hp-drw {
-    aspect-ratio: auto;
-    max-width: -webkit-fill-available;
+    /* aspect-ratio: auto; */
+    /* max-width: 100%; */
+    max-height: 80vh;
+    /* max-width: 70vh; */
+    /* height:auto; */
+    width:auto;
 }
 
-img {
-    max-width: 20vw;
-}
 
 .beer-background {
     overflow: hidden;
@@ -57,6 +59,7 @@ img {
     flex-direction: column;
     width: 50vw;
     max-width: 50vw;
+    max-height: fit-content;
 }
 
 .cong-text {
@@ -77,7 +80,6 @@ img {
     display: flex;
     flex-flow: nowrap;
     margin: auto;
-    padding-top: 5vh;
 }
 
 .disabled {
