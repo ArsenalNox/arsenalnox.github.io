@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
@@ -8,8 +9,13 @@
 </head>
 
 <body>
-    <nav class="up-header"> 
+    <nav class="up-header">
         <h2 class='cong-text'> Хэппи бёсдей ту йу </h2>
+
+        <audio id="audio" controls autoplay src="akim.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
         <div class='nav-light'></div>
     </nav>
 
@@ -22,7 +28,7 @@
         <button onclick="next_image()">НЕКСТ</button>
     </div>
 
-    <div class="img-slider"> 
+    <div class="img-slider">
 
         <div class='img-wrapper active_image'>
             <img class='hp-drw' src="img/1.png" alt="">
@@ -40,8 +46,11 @@
             <img class='hp-drw' src="img/4.jpg" alt="">
         </div>
 
+        <div class='img-wrapper disabled'>
+            <img class='hp-drw' src="img/5.png" alt="">
+        </div>
     </div>
-
 </body>
 <script src="scripts.js"></script>
+
 </html>

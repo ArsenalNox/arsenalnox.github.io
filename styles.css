@@ -67,7 +67,9 @@ img {
 
 .up-header {
     margin: 0;
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: antiquewhite;
 }
 
